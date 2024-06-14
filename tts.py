@@ -23,7 +23,7 @@ def remove_blank_sentences(file_path):
 
 
 # Example usage
-pdf_path = "Kafka.pdf"
+pdf_path = "audio.pdf"
 text = pdf_to_text(pdf_path)
 
 # Save the text to a file
