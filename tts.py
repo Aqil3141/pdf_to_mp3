@@ -8,7 +8,7 @@ def pdf_to_text(pdf_path):
     text = ""
     with pdfplumber.open(pdf_path) as pdf:
         for page in pdf.pages:
-            current_line += page.extract_text() + " "
+            text += page.extract_text() + " "
     return text
 
 def remove_blank_sentences(file_path):
